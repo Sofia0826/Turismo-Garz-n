@@ -1,16 +1,78 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'inter', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.644),rgba(0, 0, 0, 0.644)), url(/imagenes/fondo3.jpg);
+    background-repeat: no-repeat;
     background-color: white;
+    background-position: center;
+    background-size: contain;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
-h1{
+.titulo {
     text-align: center;
+    margin-top: 20px;
+    padding: 30px;
+    font-size: 2rem;
 }
 
-img{
-    width: 150px;
-    height: 150px;
-    border-radius: 50px;
-    padding: 6px;
-    background-color: aqua;
+.principal {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(5, auto); 
+    gap: 20px;
     margin: 20px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.foto {
+    background-color: rgba(255, 255, 255, 0.422);
+    height: 80%;
+    width: auto;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgb(255, 255, 255);
+    padding: 30px;
+    margin: 10%;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.foto:hover {
+    transform: scale(1.05);
+}
+
+.foto img {
+    width: 50%;
+    height: 50%;
+    border-radius: 8px;
+}
+
+.foto h3 {
+    margin-top: 10px;
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+}
+
+.foto p {
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+}
+
+ul {
+    list-style-type: none;
 }
