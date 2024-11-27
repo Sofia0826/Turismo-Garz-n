@@ -7,9 +7,9 @@
 }
 
 body {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.500),rgba(0, 0, 0, 0.500)), url(/Turismo-Garz-n/Imagenes/fondo\ del\ pro.avif); 
-    background-size: cover; 
-    background-position: center; 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.500), rgba(0, 0, 0, 0.500)), url(/Turismo-Garz-n/Imagenes/fondo\ del\ pro.avif);
+    background-size: cover;
+    background-position: center;
     margin: 0;
     padding: 0;
     color: white;
@@ -47,13 +47,13 @@ header {
 }
 
 .navbar ul li a:hover {
-    color: rgb(2, 191, 191); 
+    color: rgb(2, 191, 191);
     text-decoration: underline;
 }
 
 .uno {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 20px;
 }
@@ -70,17 +70,24 @@ header {
     justify-content: flex-start;
     align-items: center;
     height: 100%;
+    transition: transform 0.5s ease-out;  
 }
 
 .foto img {
-    width: 50%; 
+    width: 50%;
     height: 200px;
-    object-fit: cover; 
+    object-fit: cover;
     margin-bottom: 15px;
+    transition: transform 0.3s ease; 
 }
 
 .foto:hover {
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px);  
+}
+
+.foto img:hover {
+    transform: scale(1.1); 
 }
 
 .foto h3 {
@@ -95,57 +102,6 @@ header {
     line-height: 1.5;
     text-align: justify;
     margin-bottom: 10px;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'inter', sans-serif;
-    color: black;
-}
-
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    color: white;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px;
-    background-color: black;
-}
-
-.logo img {
-    width: 90px;
-    height: auto;
-}
-
-.navbar ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-.navbar ul li {
-    margin: 0 15px;
-}
-
-.navbar ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    transition: color 0.3s ease;
-}
-
-.navbar ul li a:hover {
-    color: rgb(2, 191, 191); 
-    text-decoration: underline;
 }
 
 footer {
