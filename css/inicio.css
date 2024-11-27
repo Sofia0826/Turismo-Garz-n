@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +9,9 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.500),rgba(0, 0, 0, 0.500)), url(/Imagenes/fondo\ index\ 1.jpg); 
+    background-size: cover; 
+    background-position: center; 
     margin: 0;
     padding: 0;
     color: white;
@@ -106,20 +110,21 @@ footer {
 .principal img{
     margin-top: 30px;
     border-radius: 10px;
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 16px 24px white;
     width: 30%;
     height: 30%;
 }
 
 .info{
     margin: 20px auto;
+    margin-top: 50px;
     max-width: 1100px;
     background-color:  white;
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 16px 24px rgba(0, 0, 0, 0.1);
     line-height: 1.6;
     transition: transform 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.522);
 
 }
 
