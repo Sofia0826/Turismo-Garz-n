@@ -76,3 +76,38 @@ body {
 ul {
     list-style-type: none;
 }
+
+.cuadro {
+    background-color: rgba(255, 255, 255, 0.422);
+    height: 80%;
+    width: auto;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgb(255, 255, 255);
+    padding: 30px;
+    margin: 10%;
+    text-align: center;
+    transition: transform 0.3s ease;
+    
+}
+
+.cuadro img {
+    width: 50%;
+    height: 50%;
+    border-radius: 8px;
+}
+
+.cuadro:hover {
+    transform: scale(1.05);
+}
+
+.cuadro h3 {
+    margin-top: 10px;
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+}
+
+.cuadro p {
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+}
