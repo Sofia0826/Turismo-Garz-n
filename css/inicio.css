@@ -11,7 +11,7 @@ body {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/Imagenes/fondo\ index\ 1.jpg') center/cover no-repeat fixed;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 100vh;
 }
 
 header {
